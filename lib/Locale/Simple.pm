@@ -3,7 +3,7 @@ BEGIN {
   $Locale::Simple::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Locale::Simple::VERSION = '0.001';
+  $Locale::Simple::VERSION = '0.002';
 }
 # ABSTRACT: Functions for translate text based on gettext data, also in JavaScript
 
@@ -20,6 +20,7 @@ our @EXPORT = qw(
 	l_dir
 	l_lang
 	l_dry
+	l_nolocales
 
 	l
 	ln
@@ -36,9 +37,13 @@ our @EXPORT = qw(
 
 my $dry;
 my $nowrite;
+my $nolocales;
 
 my %tds;
 my $dir;
+
+sub l_nolocales { $nolocales = shift }
+sub l_dry { $dry = shift; $nowrite = shift; $nolocales = 1 if $dry }
 
 sub gettext_escape {
 	my ( $content ) = @_;
@@ -67,8 +72,6 @@ sub l_lang {
 	$ENV{LC_ALL} = $primary;
 }
 
-sub l_dry { $dry = shift, $nowrite = shift }
-
 # write dry
 sub wd { io($dry)->append(join("\n",@_)."\n\n") if !$nowrite }
 
@@ -88,6 +91,7 @@ sub ldn { return ldnp(shift,undef,shift,shift,shift,@_) }
 sub ldp { return ldnp(shift,shift,shift,undef,undef,@_) }
 # ldnp(domain,msgctxt,msgid,msgid_plural,count,...)
 sub ldnp {
+	die "please set a locale directory with l_dir() before using other translate functions" unless $dir || $nolocales;
 	my ($td, $ctxt, $id, $idp, $n) = (shift,shift,shift,shift,shift);
 	my @args = @_;
 	unshift @args, $n if $idp;
@@ -111,7 +115,7 @@ sub ldnp {
 }
 
 sub ltd {
-	die "please set a locale directory with l_dir() before using other translate functions" unless $dir;
+	die "please set a locale directory with l_dir() before using other translate functions" unless $dir || $nolocales;
 	my $td = shift;
 	unless (defined $tds{$td}) {
 		bindtextdomain($td,$dir);
@@ -133,7 +137,7 @@ Locale::Simple - Functions for translate text based on gettext data, also in Jav
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

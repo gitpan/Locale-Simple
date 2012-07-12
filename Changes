@@ -1,3 +1,65 @@
-Revision history for Locale-Simple
+==================================================
+Changes from 1738-09-26 00:00:00 +0000 to present.
+==================================================
 
-0.001     2012-05-27 11:38:17 Europe/Berlin
+------------------------------------------
+version 0.002 at 2012-07-10 22:33:57 +0000
+------------------------------------------
+
+  Change: eb1e1639eb5e2e2266e53ceb1d464a84f233f030
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-07-10 18:33:23 +0000
+
+    Removed changes for new pluginbundle 
+
+  Change: 3cdb241227348d9ad15d18699f98e0a6c907aa5a
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-07-10 18:32:46 +0000
+
+    Switched to Author::GETTY dzil plugin bundle 
+
+  Change: 41c5535c2949c7501457b4a82d0a4b5186177cbe
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-07-10 18:32:35 +0000
+
+    Added l_nolocales 
+
+  Change: c7c70389922fb36312bc4bf479f1585ee34ba83c
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-05-27 11:38:23 +0000
+
+    v0.001 
+
+  Change: 00e61f87b1528161e525e41b722a9df6cff2012c
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-05-27 11:38:10 +0000
+
+    Fixed rights 
+
+  Change: 99cb2730a6e880f3f643c5051649644455360abb
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-05-27 11:37:56 +0000
+
+    Added PODNAME and ABSTRACT to po2json 
+
+  Change: 55fbd2695f9805c99f3964be307932cd246a07c9
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-05-27 11:31:05 +0000
+
+    Added base documentation, still requires gettext knowledge 
+
+  Change: f42488cfb112b9112e0ff5c3f3d339e3bcb81ca7
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-05-27 11:08:30 +0000
+
+    Copy over from DDG::Translate 
+
+  Change: 606285cd3894c311225f359957ce4b62f05a2d7a
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2012-05-27 10:55:37 +0000
+
+    initial commit 
+
+================
+End of releases.
+================

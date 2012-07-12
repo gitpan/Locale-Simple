@@ -16,6 +16,7 @@ t/10-gettext.t
 t/20-locale-simple.t
 t/21-dryrun.t
 t/30-locale-simple-other.t
+t/40-error.t
 t/data/gettext_test.html
 t/data/locale/de_DE/LC_MESSAGES/othertest.json
 t/data/locale/de_DE/LC_MESSAGES/othertest.mo
