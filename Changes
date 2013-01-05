@@ -1,10 +1,73 @@
 ==================================================
-Changes from 1738-09-26 00:00:00 +0000 to present.
+Changes from 1739-03-24 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.002 at 2012-07-10 22:33:57 +0000
+version 0.003 at 2013-01-05 23:10:46 +0000
 ------------------------------------------
+
+  Change: b0ca475467152ece63fdcec4d44f80a733c7d933
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-05 16:08:26 +0000
+
+    make tests exit with $?=1 if they fail 
+
+  Change: 8364d6c99a1e7be04639b4a20dee7f3d388d16f2
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-05 15:56:37 +0000
+
+    fix data finder 
+
+  Change: 9ee178482942cdbf755a7527bc248bec5eae7470
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-05 15:47:07 +0000
+
+    die if there is no V 
+
+  Change: 337a8b47719d63dc8a77eaec138b6c4ea3f1f067
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-05 23:43:41 +0000
+
+    Adapted dist.ini for python parts, changed description, added python
+    build files to .gitignore 
+
+  Change: 17279d34e5fdf3241afda36ca44982d1887f8e79
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-05 15:39:24 +0000
+
+    oops, fix version 
+
+  Change: b7368cddac6176d79f7cb6bc54b590826d529fb8
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-05 15:37:30 +0000
+
+    grab version from ENV 
+
+  Change: 43c014ef7ce15425773291546bc547c302d4df6e
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-05 13:51:51 +0000
+
+    documentation for python 
+
+  Change: 4200e2d52dfd3c6bebae8d2a5c0d80e4d1b1b410
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-05 13:08:05 +0000
+
+    add python version 
+
+  Change: a784a3ab528edd115e7bf82528bd3134d7d912ab
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-05 19:46:06 +0000
+
+    Added simple context test 
+
+  Change: 95efe61a1d1e323a093a527dbcbf8cc64b07134c
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-05 19:41:09 +0000
+
+    Added complex ordering case from sprintf documentation of Perl,
+    output validation information added (should be some JS with green/red
+    flag probably?), fixed update_locale.sh 
 
   Change: eb1e1639eb5e2e2266e53ceb1d464a84f233f030
   Author: Torsten Raudssus <torsten@raudss.us>
