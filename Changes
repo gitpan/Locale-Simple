@@ -3,8 +3,20 @@ Changes from 1739-03-24 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.003 at 2013-01-05 23:10:46 +0000
+version 0.004 at 2013-01-05 23:17:05 +0000
 ------------------------------------------
+
+  Change: 565ae413f915f61e664e9cf39dbe546ac6581839
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-06 00:15:55 +0000
+
+    Made it a platform independent egg for python 
+
+  Change: 7fef458515c360a532925f4135f5b1b6f3b713a0
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-06 00:11:49 +0000
+
+    Fixed dist.ini, removed NextRelease usage 
 
   Change: b0ca475467152ece63fdcec4d44f80a733c7d933
   Author: Michael Smith <crazedpsyc@duckduckgo.com>

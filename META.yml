@@ -22,7 +22,7 @@ requires:
 resources:
   homepage: https://github.com/Getty/p5-locale-simple
   repository: git://github.com/Getty/p5-locale-simple.git
-version: 0.003
+version: 0.004
 x_Dist_Zilla:
   perl:
     version: 5.014002
@@ -122,10 +122,6 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::MetaJSON
       name: MetaJSON
-      version: 4.300028
-    -
-      class: Dist::Zilla::Plugin::NextRelease
-      name: NextRelease
       version: 4.300028
     -
       class: Dist::Zilla::Plugin::PodSyntaxTests
