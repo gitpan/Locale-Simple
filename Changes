@@ -3,8 +3,14 @@ Changes from 1739-03-25 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.005 at 2013-01-06 00:04:07 +0000
+version 0.006 at 2013-01-06 00:15:01 +0000
 ------------------------------------------
+
+  Change: 7e1b10c60b87e0edc01e5a3ad0e12f04e9f69061
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-05 17:08:31 +0000
+
+    fix setup.py ... again 
 
   Change: b07b1ee5a9a4ac8795f3bd62438c982a9535b5bb
   Author: Torsten Raudssus <torsten@raudss.us>
