@@ -3,7 +3,7 @@ BEGIN {
   $Locale::Simple::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Locale::Simple::VERSION = '0.004';
+  $Locale::Simple::VERSION = '0.005';
 }
 # ABSTRACT: Functions for translate text based on gettext data, also in JavaScript
 
@@ -137,7 +137,7 @@ Locale::Simple - Functions for translate text based on gettext data, also in Jav
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

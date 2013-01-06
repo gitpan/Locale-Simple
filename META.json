@@ -48,7 +48,7 @@
          "web" : "https://github.com/Getty/p5-locale-simple"
       }
    },
-   "version" : "0.004",
+   "version" : "0.005",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.014002"
