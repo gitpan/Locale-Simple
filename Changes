@@ -3,8 +3,15 @@ Changes from 1739-03-25 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.006 at 2013-01-06 00:15:01 +0000
+version 0.007 at 2013-01-06 08:53:30 +0000
 ------------------------------------------
+
+  Change: df5f8de3a1c268ff5e9c40f22d3ba49d5fb5eb29
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-06 09:52:33 +0000
+
+    Refactored the Javascript testing to automatic testing, added new
+    tests for changed order with plural and placeholder 
 
   Change: 7e1b10c60b87e0edc01e5a3ad0e12f04e9f69061
   Author: Michael Smith <crazedpsyc@duckduckgo.com>

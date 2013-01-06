@@ -32,7 +32,7 @@ my %WriteMakefileArgs = (
     "Locale::PO" => "0.21",
     "Locale::TextDomain" => "1.20"
   },
-  "VERSION" => "0.006",
+  "VERSION" => "0.007",
   "test" => {
     "TESTS" => "t/*.t"
   }
