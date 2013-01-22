@@ -3,7 +3,7 @@ BEGIN {
   $Locale::Simple::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Locale::Simple::VERSION = '0.007';
+  $Locale::Simple::VERSION = '0.008';
 }
 # ABSTRACT: Functions for translate text based on gettext data, also in JavaScript
 
@@ -107,10 +107,11 @@ sub ldnp {
 		}
 		$return = sprintf($idp && $n != 1 ? $idp : $id, @args);
 	} else {
-		$return = sprintf(dnpgettext($td, $ctxt, $id, $idp, $n),@args);
+		my $gt = dnpgettext($td, $ctxt, $id, $idp, $n);
+		# Fixing bad utf8 handling
+		utf8::decode($gt);
+		$return = sprintf($gt,@args);
 	}
-	# Fixing bad utf8 handling
-	utf8::decode($return);
 	return $return;
 }
 
@@ -137,7 +138,7 @@ Locale::Simple - Functions for translate text based on gettext data, also in Jav
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 SYNOPSIS
 

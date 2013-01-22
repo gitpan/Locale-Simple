@@ -1,10 +1,34 @@
 ==================================================
-Changes from 1739-03-25 00:00:00 +0000 to present.
+Changes from 1739-04-10 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.007 at 2013-01-06 08:53:30 +0000
+version 0.008 at 2013-01-22 21:20:42 +0000
 ------------------------------------------
+
+  Change: b4a28393576cc066823cec2ccf6b3f7386972fc5
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-22 22:20:13 +0000
+
+    Moved the bad utf8 handling of gettext_pp before sprintf (Mithaldu++) 
+
+  Change: 298430517fd0bbdd07895646929c7452dc1373d5
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-22 22:17:53 +0000
+
+    Scramble filenames with md5 for positioning informations 
+
+  Change: 9ed9047cb2d38bae72b850ba1c26a2ac6dedb23d
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-10 10:42:47 +0000
+
+    Added token scraper, first version, but works so far good! 
+
+  Change: c93d75bd0188a0a7c2ded5a3af200d37ca204700
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-01-06 11:11:35 +0000
+
+    fix readme importer 
 
   Change: df5f8de3a1c268ff5e9c40f22d3ba49d5fb5eb29
   Author: Torsten Raudssus <torsten@raudss.us>
