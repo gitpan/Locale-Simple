@@ -1,10 +1,45 @@
 ==================================================
-Changes from 1739-04-10 00:00:00 +0000 to present.
+Changes from 1739-04-16 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.008 at 2013-01-22 21:20:42 +0000
+version 0.009 at 2013-01-28 22:36:55 +0000
 ------------------------------------------
+
+  Change: 2ba70dc80208a393e1bf7f1e56c106491dbb1bbb
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-28 14:36:28 +0000
+
+    Merge pull request #2 from wchristian/patch-2
+
+    allow output of scraper to be recognized by poedit 
+
+  Change: ef4523a42ecd13775f7f17832f5e29119f60372a
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-01-28 14:34:56 +0000
+
+    Merge pull request #1 from wchristian/patch-1
+
+    allow use of msg ids with utf8 chars 
+
+  Change: e9fb07d24fca0bbe0c1c683b517dc2573533d45d
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2013-01-23 19:05:33 +0000
+
+    allow output of scraper to be recognized by poedit
+
+    Without an empty msgstr line, poedit will not recognize msgid lines
+    as items to be translated, so adding it results in useful .po files. 
+
+  Change: 0fff6638016621512caf177cf27bd378b4b909bd
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2013-01-23 19:02:41 +0000
+
+    allow use of msg ids with utf8 chars
+
+    The msgids from the mo file are read in as bytes in L::TD, as such
+    they need to be encoded before being sent to it, otherwise they
+    wouldn't match any keys and translations would not be found for them. 
 
   Change: b4a28393576cc066823cec2ccf6b3f7386972fc5
   Author: Torsten Raudssus <torsten@raudss.us>
