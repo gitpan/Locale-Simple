@@ -1,10 +1,22 @@
 ==================================================
-Changes from 1739-04-16 00:00:00 +0000 to present.
+Changes from 1739-04-20 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.009 at 2013-01-28 22:36:55 +0000
+version 0.010 at 2013-02-01 21:53:17 +0000
 ------------------------------------------
+
+  Change: 9bfc923a80b4c60decadc8ce2d313a2ef7f34c3b
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-02-01 22:52:57 +0000
+
+    Added sprintf_compare function for comparing placeholders 
+
+  Change: 08d6e3ff613d6e57184eb221edd44e7dfc5943d8
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2013-01-30 13:10:37 +0000
+
+    make sure the scraper actually prints newlines as proper chars 
 
   Change: 2ba70dc80208a393e1bf7f1e56c106491dbb1bbb
   Author: Torsten Raudssus <torsten@raudss.us>

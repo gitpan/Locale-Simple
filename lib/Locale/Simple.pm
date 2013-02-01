@@ -3,7 +3,7 @@ BEGIN {
   $Locale::Simple::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Locale::Simple::VERSION = '0.009';
+  $Locale::Simple::VERSION = '0.010';
 }
 # ABSTRACT: Functions for translate text based on gettext data, also in JavaScript
 
@@ -50,6 +50,14 @@ sub gettext_escape {
 	$content =~ s/\n/\\n/g;
 	$content =~ s/"/\\"/g;
 	return $content;
+}
+
+sub sprintf_compare {
+	my ( $first, $second ) = @_;
+	my $re = qr/(?:%%|%(?:[0-9]+\$)?[+-]?(?:[ 0]|\'.)?-?[0-9]*(?:\.[0-9]+)?[bcdeufFosxX])/;
+	my @placeholder_first = sort { $a cmp $b } map { my @chars = split(//,$_); pop @chars; } ($first =~ m/$re/g);
+	my @placeholder_second = sort { $a cmp $b } map { my @chars = split(//,$_); pop @chars; } ($second =~ m/$re/g);
+	return join("",@placeholder_first) eq join("",@placeholder_second);
 }
 
 sub coderef_hash {{
@@ -140,7 +148,7 @@ Locale::Simple - Functions for translate text based on gettext data, also in Jav
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 SYNOPSIS
 
