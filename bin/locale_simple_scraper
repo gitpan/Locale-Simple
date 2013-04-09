@@ -115,6 +115,7 @@ finddepth(sub {
 		my $file = $File::Find::name;
 		my $type = $e{$ext};
 		print STDERR $type." => ".$file."\n";
+		return if -l $file and not -e readlink($file);
 		my @lines = io($file)->slurp;
 		my $line = 0;
 		for (@lines) {
@@ -197,16 +198,6 @@ sub parse_line {
 			}
 		}
 	}
-	if(!@results) {
-		for (keys %f) {
-			my @args = @{$f{$_}};
-			for ($line =~ /[^\w]${_}\((.*)/) {
-				my $argc = scalar @args;
-				my ( $remainder, @params ) = parse_params($1, $type, $argc);
-				die "incomplete token:\n$line" if scalar @params != $argc;
-			}
-		}
-	}
 	return @results;
 }
 
@@ -262,7 +253,7 @@ locale_simple_scraper - Command line tool for finding tokens in code
 
 =head1 VERSION
 
-version 0.011
+version 0.012
 
 =head1 SYNOPSIS
 
