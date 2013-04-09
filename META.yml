@@ -22,7 +22,7 @@ requires:
 resources:
   homepage: https://github.com/Getty/p5-locale-simple
   repository: git://github.com/Getty/p5-locale-simple.git
-version: 0.012
+version: 0.013
 x_Dist_Zilla:
   perl:
     version: 5.014002
