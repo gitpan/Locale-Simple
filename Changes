@@ -3,8 +3,14 @@ Changes from 1739-07-28 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.014 at 2013-05-11 21:36:36 +0000
+version 0.015 at 2013-05-11 23:02:37 +0000
 ------------------------------------------
+
+  Change: cd0a22b47da7053e70b2926d2688d7003cfeaaaa
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-05-11 23:42:24 +0000
+
+    Lets see if this works for travis now... 
 
   Change: 3326ac645caf753b4ae02f177a744bfd95275f92
   Author: Torsten Raudssus <torsten@raudss.us>
