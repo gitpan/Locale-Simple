@@ -1,10 +1,28 @@
 ==================================================
-Changes from 1739-06-26 00:00:00 +0000 to present.
+Changes from 1739-07-28 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.013 at 2013-04-09 13:19:14 +0000
+version 0.014 at 2013-05-11 21:36:36 +0000
 ------------------------------------------
+
+  Change: 3326ac645caf753b4ae02f177a744bfd95275f92
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-05-11 23:34:34 +0000
+
+    Switched to TravisCI module, added new .travis.yml 
+
+  Change: af380d7e80aa7867390049820e724baa448b6f5c
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2013-05-11 23:28:10 +0000
+
+    make Locale::Simple independent of OS locale mechanics 
+
+  Change: 5e367e77dc7537f432ec149e5b19aa3c322924a9
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-04-21 01:26:16 +0000
+
+    Added .travis.yml 
 
   Change: 501b627fcf9658f98f3b7246979268caf5fd0dcf
   Author: Torsten Raudssus <torsten@raudss.us>

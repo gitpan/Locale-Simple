@@ -3,7 +3,7 @@ BEGIN {
   $Locale::Simple::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Locale::Simple::VERSION = '0.013';
+  $Locale::Simple::VERSION = '0.014';
 }
 # ABSTRACT: Functions for translate text based on gettext data, also in JavaScript
 
@@ -11,7 +11,7 @@ use strict;
 use warnings;
 
 use Exporter 'import';
-use Locale::gettext_pp qw(:locale_h :libintl_h);
+use Locale::gettext_dumb qw(:locale_h :libintl_h);
 use POSIX qw' setlocale ';
 use IO::All -utf8;
 
@@ -75,9 +75,10 @@ sub l_dir { $dir = shift }
 
 sub l_lang {
 	my $primary = shift;
-	$ENV{LANG} = $primary;		# unsure if these ENV assignments are still needed with the setlocale below
 	$ENV{LANGUAGE} = $primary;
+	$ENV{LANG} = $primary;		# unsure if these ENV assignments are still needed with the setlocale below
 	$ENV{LC_ALL} = $primary;
+	$ENV{LC_MESSAGES} = $primary; # set locale for messages if the system supports it
 	setlocale( LC_MESSAGES, $primary ) if eval { LC_MESSAGES }; # set locale for messages if the system supports it
 }
 
@@ -149,7 +150,7 @@ Locale::Simple - Functions for translate text based on gettext data, also in Jav
 
 =head1 VERSION
 
-version 0.013
+version 0.014
 
 =head1 SYNOPSIS
 
