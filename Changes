@@ -1,10 +1,22 @@
 ==================================================
-Changes from 1739-07-28 00:00:00 +0000 to present.
+Changes from 1739-07-30 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.015 at 2013-05-11 23:02:37 +0000
+version 0.016 at 2013-05-13 12:33:04 +0000
 ------------------------------------------
+
+  Change: 3f85969c5ff7de8c44db0228c5b44f426e79244c
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2013-05-13 11:31:19 +0000
+
+    make sure the first test uses _dumb instead of _pp 
+
+  Change: 49919fca65b967ba299a46b18b37dde977dbe80b
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2013-05-13 11:30:22 +0000
+
+    require TextDomain version that'll give us _dumb 
 
   Change: cd0a22b47da7053e70b2926d2688d7003cfeaaaa
   Author: Torsten Raudssus <torsten@raudss.us>

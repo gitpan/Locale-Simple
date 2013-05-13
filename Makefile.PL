@@ -29,12 +29,12 @@ my %WriteMakefileArgs = (
     "IO::All" => "0.41",
     "JSON" => "2.53",
     "Locale::PO" => "0.21",
-    "Locale::TextDomain" => "1.20"
+    "Locale::TextDomain" => "1.23"
   },
   "TEST_REQUIRES" => {
     "Test::More" => "0.98"
   },
-  "VERSION" => "0.015",
+  "VERSION" => "0.016",
   "test" => {
     "TESTS" => "t/*.t"
   }
