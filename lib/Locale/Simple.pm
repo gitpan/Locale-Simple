@@ -2,18 +2,16 @@ package Locale::Simple;
 BEGIN {
   $Locale::Simple::AUTHORITY = 'cpan:GETTY';
 }
-{
-  $Locale::Simple::VERSION = '0.016';
-}
 # ABSTRACT: Functions for translate text based on gettext data, also in JavaScript
-
+$Locale::Simple::VERSION = '0.017';
 use strict;
 use warnings;
 
 use Exporter 'import';
+use Locale::TextDomain 1.23 (); # to ensure we get the right version of gettext_dumb
 use Locale::gettext_dumb qw(:locale_h :libintl_h);
 use POSIX qw' setlocale ';
-use IO::All -utf8;
+use IO::All 0.41 -utf8;
 
 our @EXPORT = qw(
 	
@@ -47,6 +45,7 @@ sub l_dry { $dry = shift; $nowrite = shift; $nolocales = 1 if $dry }
 
 sub gettext_escape {
 	my ( $content ) = @_;
+	$content =~ s/\\/\\\\/g;
 	$content =~ s/\n/\\n/g;
 	$content =~ s/"/\\"/g;
 	return $content;
@@ -140,8 +139,8 @@ sub ltd {
 
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -150,7 +149,7 @@ Locale::Simple - Functions for translate text based on gettext data, also in Jav
 
 =head1 VERSION
 
-version 0.016
+version 0.017
 
 =head1 SYNOPSIS
 
@@ -245,4 +244,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

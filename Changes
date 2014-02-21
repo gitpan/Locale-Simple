@@ -1,10 +1,287 @@
 ==================================================
-Changes from 1739-07-30 00:00:00 +0000 to present.
+Changes from 1740-05-09 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.016 at 2013-05-13 12:33:04 +0000
+version 0.017 at 2014-02-21 01:33:44 +0000
 ------------------------------------------
+
+  Change: fac3922df2f924741b97730489cf02f1d4e4b694
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-21 01:33:34 +0000
+
+    new travis settings 
+
+  Change: 3a2e6bd93acabf9a841812d49441e27485fb1920
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-21 02:01:22 +0000
+
+    all the test data needs to be treated by dzil as binary files 
+
+  Change: d354738a61681b1adaa228c9b99105c1be77eb35
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:59:07 +0000
+
+    empty merge commit to aid history spelunking 
+
+  Change: 5bbbce110bfdc22487f8a277cce7691f37c0a3d0
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:51 +0000
+
+    add option to suppress line number output 
+
+  Change: c77da4bcc2ee7444d27b08ec2785d5b117670575
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:51 +0000
+
+    ignore dzil build artefacts 
+
+  Change: 54abf6cc9ea0b2a890246c4b5ff4d3552f657dc0
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:51 +0000
+
+    concatenated dynamic strings can contain function calls 
+
+  Change: fda3c3e96796b464298f65be13483383aac0bdab
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:51 +0000
+
+    perl 5.10 needs parens on that shift 
+
+  Change: d2b351477b816a68daf6d4533c749acadc873e0a
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:51 +0000
+
+    force the scraper to always process files in the same order 
+
+  Change: ad424870b8e55259f9ef620151171d7bcfabe7c5
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:51 +0000
+
+    ensure tests work in release configuration and after dzil munging 
+
+  Change: ab274636dff23eefc2f3812141b94a4622e0cb6e
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:50 +0000
+
+    move expect_op to Parser.pm, as it is specific to LSSP 
+
+  Change: 2f4fc01d9ce9f1fef077a115ec6565b1faac21dd
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:50 +0000
+
+    add abstracts for the newly added modules 
+
+  Change: 73679cc14493df6827650d389879d45285ddb8e9
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:50 +0000
+
+    dzil config now uses AutoPrereqs 
+
+  Change: c88f9150a8ac04b54d732e7d84a65bc3eb05402b
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:50 +0000
+
+    expect_op now handles preceding whitespace transparently 
+
+  Change: 1cc552da4524ab6fba73509c8631ee003524382b
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:50 +0000
+
+    reports for where tokens are found now use the line number of the l*
+    call 
+
+  Change: 106f4c0a6d0ee116077227f2f73d9fba813171a5
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:50 +0000
+
+    make arguments() semantically more clean by moving result saving to
+    call() 
+
+  Change: 38e62bea8996620911ccf101f4fdc1a15b193550
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:50 +0000
+
+    don't strip error line numbers in tests, report doesn't print them
+    anymore 
+
+  Change: 241d96d976237742def3511af29d8e57aa897027
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:50 +0000
+
+    improve readability of arguments sub 
+
+  Change: e9c05a529f0f86eb368aa36e3da8d4b788f2d2b7
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    converted required_args methods into one method 
+
+  Change: aae77a545878f8e2e0f6c6d5fcb6213abdfad55a
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    expect_string is now expect_op, which never returns the op 
+
+  Change: 04161839133a2f1c26d999727907a71c8a054e11
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    introduce with_ws to execute a parse while keeping whitespace 
+
+  Change: 0743bd2c0bfc5e0cceb3abd2d0d7e3f47b238373
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    introduce shortcuts for some curries, fixes list_of curry
+    incompatibility 
+
+  Change: 198fa19ac24ff9b27b5e54b704348e07fe947768
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    improve readability by liberal application of curry 
+
+  Change: ede065b3109d7903f6ef76584909ce2aacb7abed
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    improve readability of parser code by factoring out generic shortcuts 
+
+  Change: 9f46c2be62b444c7ccc9a1f871a5e5958ed47180
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    improve readability of parser code by renaming and refactoring 
+
+  Change: cc052d2d718cd54e5e3d1ae16952d2257678f542
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    converted extra-arg parsing from maybe to list, fixing extra arg
+    counts 
+
+  Change: ba349b9ffd92664044f1736d9c7485b4666d1505
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    the noise character count does not really matter and is too volatile 
+
+  Change: dd3bd125198e73a68ba43cc1a9d95bfc18917175
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:49 +0000
+
+    test for multiline calls of various kinds 
+
+  Change: 2c596d2773feb1df9661d41598bfc944aa410691
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    parse extra arguments with variables and variables in concatenated
+    strings 
+
+  Change: bafc84f5907e98a99b933bf7a1aee83a678fb8ae
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    parse concatenated strings 
+
+  Change: f2c3fa0d66eb03ff1d9720fb766b0c9c991b8ec6
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    retain spaces in strings 
+
+  Change: 56afbff9798d52063d7396129ef66f61be73b8eb
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    parse required arguments per function 
+
+  Change: 95713c6ba85ef412f6a63af08fda86fc14148872
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    only debug MGC fails 
+
+  Change: 8aa65721d0bd4dd8e7e23eff2e55e2df90f5ea41
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    support for nested localization calls 
+
+  Change: f54aa0dcd19f1cd2bb7410885882ad7d729124b5
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    extended definition of what a non-escaped character in a complex
+    string is 
+
+  Change: 3562a372c734766b52bcdbace8e251e077aab3e3
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    the commit is unnecessary since we fail() manually 
+
+  Change: 3c0eda8181de7d4aabbf01efd129257099fd3531
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    implemented MGC parser for scraper 
+
+  Change: 81a03c17314b4ab4a98556927c6464062a5356b3
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:48 +0000
+
+    ensure backslashes in output are properly escaped 
+
+  Change: f1d1fcbb633772232ce367fada205f50079fb0f9
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:47 +0000
+
+    factored out result_from_params function in scraper 
+
+  Change: ba1f1fa83bc38c8ea2e1105a8fe19e615ffc7bfe
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 18:57:37 +0000
+
+    tests 
+
+  Change: d9c59161296ff01618469295b3283df40bb0fe40
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 16:19:56 +0000
+
+    properly mark translation strings in plural strings 
+
+  Change: 2edbd09bf905aef864bb09c4295ddb047d11f141
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 16:19:56 +0000
+
+    ensure escaped characters are output correctly 
+
+  Change: 800966d46e06aebfe41a9126cf45e87ac3b2ab1a
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 16:19:56 +0000
+
+    find tokens at the start of a line 
+
+  Change: 00f27cc819035ce7c6e684c5ecba5db495fbd27e
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-02-20 16:19:56 +0000
+
+    move scraper code into a module 
+
+  Change: 6eaef83f4785e27eea6b673b8f90ed7e306b52f5
+  Author: Michael Smith <crazedpsyc@duckduckgo.com>
+  Date : 2013-08-15 15:58:02 +0000
+
+    Fix empty-string issue for python 
+
+  Change: 0a7638e02856d46277f270136007e1114fa93897
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-06-11 05:41:16 +0000
+
+    Added test that should fail... but hm they dont... ok but i made them 
 
   Change: 3f85969c5ff7de8c44db0228c5b44f426e79244c
   Author: Christian Walde <walde.christian@googlemail.com>
