@@ -1,10 +1,22 @@
 ==================================================
-Changes from 1740-05-09 00:00:00 +0000 to present.
+Changes from 1740-11-23 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.017 at 2014-02-21 01:33:44 +0000
+version 0.018 at 2014-09-07 17:22:38 +0000
 ------------------------------------------
+
+  Change: 88e9c5a2aa5f7897ecc98950484859c2e8a69c89
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2014-09-07 19:22:18 +0000
+
+    Added old (different working) scraper version 
+
+  Change: 51c0f2442f2d22b7190fa9e735854abd7a33f8f1
+  Author: Christian Walde <walde.christian@googlemail.com>
+  Date : 2014-09-06 23:18:40 +0000
+
+    allow for multiple concat ops and add xslate concat op ~ 
 
   Change: fac3922df2f924741b97730489cf02f1d4e4b694
   Author: Christian Walde <walde.christian@googlemail.com>

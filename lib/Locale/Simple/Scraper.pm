@@ -5,7 +5,7 @@ package Locale::Simple::Scraper;
 BEGIN {
   $Locale::Simple::Scraper::AUTHORITY = 'cpan:GETTY';
 }
-$Locale::Simple::Scraper::VERSION = '0.017';
+$Locale::Simple::Scraper::VERSION = '0.018';
 # ABSTRACT: scraper to find translation tokens in a directory
 
 use Exporter 'import';
@@ -289,7 +289,7 @@ Locale::Simple::Scraper - scraper to find translation tokens in a directory
 
 =head1 VERSION
 
-version 0.017
+version 0.018
 
 =head1 AUTHOR
 

@@ -5,7 +5,7 @@ package Locale::Simple::Scraper::ParserShortcuts;
 BEGIN {
   $Locale::Simple::Scraper::ParserShortcuts::AUTHORITY = 'cpan:GETTY';
 }
-$Locale::Simple::Scraper::ParserShortcuts::VERSION = '0.017';
+$Locale::Simple::Scraper::ParserShortcuts::VERSION = '0.018';
 # ABSTRACT: LSS::Parser methods that are generic shortcuts to P::MGC functionality
 
 use Moo::Role;
@@ -90,7 +90,7 @@ Locale::Simple::Scraper::ParserShortcuts - LSS::Parser methods that are generic 
 
 =head1 VERSION
 
-version 0.017
+version 0.018
 
 =head1 AUTHOR
 
