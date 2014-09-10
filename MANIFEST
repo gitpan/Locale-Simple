@@ -10,6 +10,7 @@ bin/locale_simple_scraper
 bin/locale_simple_scraper_old
 bin/po2json
 dist.ini
+dist/locale-simple-0.018.tar.gz
 lib/Locale/Simple.pm
 lib/Locale/Simple/Scraper.pm
 lib/Locale/Simple/Scraper/Parser.pm

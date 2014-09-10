@@ -5,7 +5,7 @@ package Locale::Simple::Scraper::Parser;
 BEGIN {
   $Locale::Simple::Scraper::Parser::AUTHORITY = 'cpan:GETTY';
 }
-$Locale::Simple::Scraper::Parser::VERSION = '0.018';
+$Locale::Simple::Scraper::Parser::VERSION = '0.019';
 # ABSTRACT: parser to finds translation tokens in a code file
 
 use base qw( Parser::MGC );
@@ -159,7 +159,7 @@ Locale::Simple::Scraper::Parser - parser to finds translation tokens in a code f
 
 =head1 VERSION
 
-version 0.018
+version 0.019
 
 =head1 AUTHOR
 
